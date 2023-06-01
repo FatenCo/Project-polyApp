@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.SingUpEnseignantController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="776.0" style="-fx-background-color: #DB0073;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="466.0" prefHeight="600.0" prefWidth="534.0" style="-fx-background-color: #048B9A;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="add_membre_btn" layoutX="122.0" layoutY="474.0" mnemonicParsing="false" onAction="#action_add_membre" prefHeight="45.0" prefWidth="289.0" style="-fx-background-color: #3d3242;" text="S'inscrire" textFill="WHITE">
+                     <effect>
+                        <Bloom>
+                           <input>
+                              <DropShadow />
+                           </input>
+                        </Bloom>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="114.0" layoutY="247.0" prefHeight="25.0" prefWidth="92.0" text="E-MAIL :" AnchorPane.leftAnchor="114.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="188.0" layoutY="14.0" prefHeight="45.0" prefWidth="157.0" text="Inscription" AnchorPane.leftAnchor="188.0">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="116.0" layoutY="73.0" prefHeight="27.0" prefWidth="137.0" text="Prenom :" AnchorPane.leftAnchor="116.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="119.0" layoutY="148.0" prefHeight="27.0" prefWidth="130.0" text="Nom :" AnchorPane.leftAnchor="119.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="116.0" layoutY="347.0" prefHeight="27.0" prefWidth="157.0" text="Mot de passe :" AnchorPane.leftAnchor="116.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="prenom_membre" layoutX="114.0" layoutY="107.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.leftAnchor="114.0" />
+                  <TextField fx:id="nom_membre" layoutX="118.0" layoutY="183.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.leftAnchor="118.0" />
+                  <TextField fx:id="email_membre" layoutX="120.0" layoutY="300.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.leftAnchor="120.0" />
+                  <PasswordField fx:id="mdp_membre" layoutX="123.0" layoutY="390.0" prefHeight="30.0" prefWidth="300.0" />
+                  <ImageView fitHeight="70.0" fitWidth="81.0" layoutX="430.0" layoutY="462.0">
+                     <image>
+                        <Image url="@../../../../../PIDEV%203A/PIDev_JAVA/src/assets/success.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="switch_signin_membre_btn" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" onAction="#action_switch_signin_membre" prefHeight="45.0" prefWidth="322.0" style="-fx-background-color: #9400d3;" text="Se connecter" textFill="WHITE">
+               <effect>
+                  <Bloom>
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </Bloom>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="55.0" layoutY="14.0" prefHeight="64.0" prefWidth="373.0" text="Bienvenue dans PolyApp" textFill="#9a3333">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="qr" fitHeight="155.0" fitWidth="200.0" layoutX="121.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img" fitHeight="184.0" fitWidth="344.0" layoutX="59.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="70.0" fitWidth="200.0" layoutX="121.0" layoutY="53.0">
+               <image>
+                  <Image url="@../assets/Logo-Pi-RVB.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

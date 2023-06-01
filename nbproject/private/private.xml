@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/InterfaceEnseignantController.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/InterfaceEnseignant.fxml</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/Gestion_userController.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/SingUpEnseignant.fxml</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/modeles/User.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/modeles/Enseignant.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/services/ServiceUser.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/SignInEnseignantController.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/agence/FXMainEnseignant.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/agence/FXMainAdmin.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/ProfilEnseignantController.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/utils/DataSource.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/SignInEnseignant.fxml</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/agence/GestionEnseignants.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/SingUpEnseignantController.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/DashboardAdmin.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/modeles/Admin.java</file>
+            <file>file:/F:/Documents/NetBeansProjects/GestionEnseignants/src/views/ProfilEnseignant.fxml</file>
+        </group>
+    </open-files>
+</project-private>

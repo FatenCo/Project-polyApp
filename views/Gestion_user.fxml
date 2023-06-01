@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #DB0073;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Gestion_userController">
+   <children>
+      <TableView fx:id="table" layoutX="264.0" layoutY="85.0" onMouseClicked="#handleMouseAction" prefHeight="407.0" prefWidth="437.0" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="85.0">
+        <columns>
+          <TableColumn fx:id="cl_id_user" prefWidth="41.0" text="ID" />
+          <TableColumn fx:id="cl_nom_user" prefWidth="95.0" text="NOM" />
+            <TableColumn fx:id="cl_prenom_user" prefWidth="85.0" text="PRENOM" />
+            <TableColumn fx:id="cl_email_user" prefWidth="145.0" text="E-mail" />
+            <TableColumn fx:id="cl_role" prefWidth="116.0" text="Role" />
+            <TableColumn fx:id="cl_mdp_user" prefWidth="155.0" text="MOT DE PASSE" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nom" layoutX="51.0" layoutY="169.0" prefHeight="25.0" prefWidth="193.0" promptText="Prenom.." />
+      <TextField fx:id="prenom" layoutX="51.0" layoutY="244.0" prefHeight="25.0" prefWidth="193.0" promptText="Nom.." />
+      <TextField fx:id="id" layoutX="51.0" layoutY="96.0" prefHeight="25.0" prefWidth="193.0" promptText="id" />
+      <Button fx:id="up" layoutX="29.0" layoutY="580.0" mnemonicParsing="false" onAction="#update" prefHeight="52.0" prefWidth="98.0" style="-fx-background-color: #048B9A;" text="Mise a jour" textFill="WHITE" AnchorPane.bottomAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="del" layoutX="166.0" layoutY="580.0" mnemonicParsing="false" onAction="#delete" prefHeight="52.0" prefWidth="98.0" style="-fx-background-color: #FF0000;" text="Supprimer" textFill="WHITE" AnchorPane.bottomAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="51.0" layoutY="61.0" text="Id :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="134.0" prefHeight="27.0" prefWidth="88.0" text="Prenom :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="211.0" prefHeight="27.0" prefWidth="102.0" text="Nom" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_rech" layoutX="956.0" layoutY="27.0" mnemonicParsing="false" onAction="#EnterRecherche" prefHeight="21.0" prefWidth="27.0" style="-fx-background-color: #9400d3;" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font>
+      </Button>
+      <TextField fx:id="recherche_user" layoutX="752.0" layoutY="27.0" onAction="#EnterRecherche" prefHeight="21.0" prefWidth="186.0" promptText="Recherche....">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="table1" layoutX="299.0" layoutY="95.0" onMouseClicked="#handleMouseAction1" prefHeight="407.0" prefWidth="415.0" visible="false" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="289.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="85.0">
+         <columns>
+            <TableColumn fx:id="cl_id_user1" prefWidth="75.0" text="Id_user" />
+            <TableColumn fx:id="cl_nom_user1" prefWidth="75.0" text="nom_user" />
+            <TableColumn fx:id="cl_prenom_user1" prefWidth="54.0" text="prenom_user" />
+            <TableColumn fx:id="cl_tel_user1" prefWidth="56.0" text="tel_user" />
+            <TableColumn fx:id="cl_email_user1" prefWidth="49.0" text="email_user" />
+            <TableColumn fx:id="cl_mdp_user1" prefWidth="104.0" text="mdp_user" />
+         </columns>
+      </TableView>
+      <TextField fx:id="pass" layoutX="51.0" layoutY="339.0" prefHeight="25.0" prefWidth="193.0" promptText="Mot de passe.." />
+      <Label layoutX="43.0" layoutY="300.0" prefHeight="27.0" prefWidth="193.0" text="Mot de passe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mail" layoutX="51.0" layoutY="421.0" prefHeight="25.0" prefWidth="193.0" promptText="E-mail.." />
+      <Label layoutX="43.0" layoutY="386.0" prefHeight="27.0" prefWidth="215.0" text="Email :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="264.0" layoutY="49.0" mnemonicParsing="false" onAction="#diselect" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #CECECE;" text="Actualiser" textFill="WHITE" />
+      <Button layoutX="791.0" layoutY="538.0" mnemonicParsing="false" onAction="#ActionDashboard" prefHeight="37.0" prefWidth="165.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@magasin.css" text="Retour dashboard" textFill="#820282">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="add" layoutX="289.0" layoutY="538.0" mnemonicParsing="false" onAction="#ADD" prefHeight="52.0" prefWidth="130.0" style="-fx-background-color: #01D758;" text="Ajouter Enseignant" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="70.0" fitWidth="200.0" layoutX="-1.0" layoutY="3.0">
+         <image>
+            <Image url="@../assets/Logo-Pi-RVB.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
